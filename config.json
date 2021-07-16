@@ -1,0 +1,32 @@
+{
+  "name": "Space",
+  "namespace": "Dcc\\Space",
+  "description": "Indent skip patterns",
+  "documentation": "README.md",
+  "authors": [
+    {
+      "name": "Greg Neils",
+      "email": "gn2003@cumc.columbia.edu",
+      "institution": "Columbia University"
+    }
+  ],
+  "permissions": [
+    "redcap_data_entry_form",
+    "redcap_survey_page"
+  ],
+  "enable-every-page-hooks-on-system-pages": false,
+  "project-settings": [
+    {
+      "key": "indent-size",
+      "name": "Base amount to indent",
+      "type": "text"
+    }
+  ],
+
+  "compatibility": {
+    "php-version-min": "7.2",
+    "php-version-max": "",
+    "redcap-version-min": "11.0",
+    "redcap-version-max": ""
+  }
+}
