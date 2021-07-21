@@ -26,6 +26,20 @@ class Space extends \ExternalModules\AbstractExternalModule
         }
         $this->setJS($project_id, $instrument);
         echo $this->js;
+
+        $projects = $this->getProjectSettings();
+        $data = REDCap::getData('csv');
+
+//        $exists = method_exists('Space', 'getProjectSettings')? "yes" : "npe";
+       $projects = $this->getProjectsWithModuleEnabled();
+
+        echo '<div style="background-color: black; color:white;"><pre>Testing<br>';
+        echo 'begin data<br>';
+        echo 'More begin data<br>';
+        print_r($projects);
+        echo '<br>end data<br>';
+        echo '</pre></div>';
+
     }
 
     function redcap_survey_page(int $project_id, string $record = NULL, string $instrument, int $event_id, int $group_id = NULL, int $repeat_instance = 1)
@@ -40,8 +54,8 @@ class Space extends \ExternalModules\AbstractExternalModule
 
     private function setJS($project_id, $instrument)
     {
-        $this->js = 'Greg Was Here' .
-            '<script type="text/javascript">' .
+
+        $this->js = '<script type="text/javascript">' .
             'var DCCIndentSpace = {};' .
             'DCCIndentSpace.initialize = ' .
             $this->setElementsJs($project_id, $instrument) .
