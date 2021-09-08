@@ -15,6 +15,7 @@
     "redcap_survey_page"
   ],
   "enable-every-page-hooks-on-system-pages": false,
+  "framework-version": 6,
   "system-settings": [
     {
       "key": "system-readme",
