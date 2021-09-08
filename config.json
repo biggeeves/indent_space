@@ -1,6 +1,6 @@
 {
   "name": "Indent Space",
-  "namespace": "Dcc\\Space",
+  "namespace": "Dcc\\IndentSpace",
   "description": "Indent skip patterns",
   "documentation": "README.md",
   "authors": [
@@ -15,14 +15,19 @@
     "redcap_survey_page"
   ],
   "enable-every-page-hooks-on-system-pages": false,
-  "project-settings": [
+  "system-settings": [
+    {
+      "key": "system-readme",
+      "name": "This EM provides an easy way to indent questions by a set amount.  See Readme for examples.",
+      "type": "descriptive"
+    },
     {
       "key": "indent-size",
-      "name": "Base amount to indent",
-      "type": "text"
+      "name": "Base amount to indent.  Suggested 40.",
+      "type": "text",
+      "validation": "integer"
     }
   ],
-
   "compatibility": {
     "php-version-min": "7.2",
     "php-version-max": "",
