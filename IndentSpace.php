@@ -14,7 +14,7 @@ class IndentSpace extends \ExternalModules\AbstractExternalModule
     private $js;
 
     protected static $Tags = array(
-        '@SPACE-LEFT' => array('description'=>'Indent Space EM<br>Use to indent a block to the right.  Values are 1-9. Example: @space-left=2'),
+        '@SPACE-LEFT' => array('description'=>'Indent Space EM<br>Use to indent a block to the right.  Values are 1-9. Example: @SPACE-LEFT=2'),
     );
 
 
